@@ -7,6 +7,7 @@ node{
                   sh 'rm -r app2'
             }
             git credentialsId: 'FaizalGit', url: 'https://github.com/faizalgit/app2'
+            sh 'git checkout master'
             sh 'git clone https://github.com/faizalgit/app2'
             sh 'git status'
             sh 'git add *'
