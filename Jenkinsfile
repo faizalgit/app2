@@ -1,5 +1,6 @@
 def version
 def modifiedFiles
+def skipBuild
 node{
       stage("check for code change"){
             if (fileExists('app2')){
