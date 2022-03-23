@@ -9,6 +9,6 @@ node{
             git credentialsId: 'FaizalGit', url: 'https://github.com/faizalgit/app2'
             sh 'git clone https://github.com/faizalgit/app2'
             sh 'git status'
-            sh 'git log -1 | grep Update'
+            scmSkip(deleteBuild: true, skipPattern:'.*\\[skip_build\\].*'
       }
 }
