@@ -2,7 +2,7 @@ def version
 def modifiedFiles
 node{
       stage("check for code change"){
-            if (filExists('app2')){
+            if (fileExists('app2')){
                   sh 'rm -r app2'
             }
             git credentialsId: 'FaizalGit', url: 'https://github.com/faizalgit/app2'
