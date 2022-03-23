@@ -13,4 +13,7 @@ node{
             sh 'git commit -m "skip_build"'
             scmSkip(deleteBuild: true, skipPattern:'.*\\[skip_build\\].*')
       }
+      stage("Compile"){
+            echo 'i am in compile stage'
+      }      
 }
