@@ -10,9 +10,9 @@ node{
             sh 'git checkout master'
             sh 'git clone https://github.com/faizalgit/app2'
             sh 'git status'
-            sh 'git add *'
+            sh 'git add '
             sh 'git commit -m "skip_build"'
-            scmSkip(deleteBuild: true, skipPattern:'.*\\[skip_build
+            scmSkip(deleteBuild: true, skipPattern:'.skip_build)
             echo 'i am in compile stage'
       }
         
