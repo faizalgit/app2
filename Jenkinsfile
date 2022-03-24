@@ -7,8 +7,7 @@ node{
                   sh 'rm -r app2'
             }
             git credentialsId: 'FaizalGit', url: 'https://github.com/faizalgit/app2'
-            //sh 'git clone https://github.com/faizalgit/app2'
-            mvn compile
+            sh 'git clone https://github.com/faizalgit/app2'
       }
         
 }
