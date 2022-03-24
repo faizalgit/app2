@@ -14,7 +14,7 @@ node{
             sh 'git add .'
             sh 'git commit -m "skip_build"'
             scmSkip(deleteBuild: true, skipPattern:'skip_build')
-            echo changeLogSets
+            echo $changeLogSets
             echo 'i am in compile stage'
       }
         
