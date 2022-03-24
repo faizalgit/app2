@@ -10,7 +10,7 @@ node{
             sh 'git checkout master'
             sh 'git clone https://github.com/faizalgit/app2'
             sh 'git status'
-            item = hudson.model.Hudson.instance.getItem("job_name")
+            item = hudson.model.Hudson.instance.getItem("app2_pipeline")
             build = item.getLastBuild()
             echo 'build time'
             println build.getTime()
